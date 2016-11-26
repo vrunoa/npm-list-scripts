@@ -4,8 +4,9 @@
   "description": "A simple cli that list current package scripts, because something I forget their names",
   "main": "main.js",
   "scripts": {
-    "test": "standard",
+    "test": "standard & ./test.js",
     "prestart": "standard",
+    "prepublish": "npm run test",
     "start": "./main.js"
   },
   "preferGlobal": true,
