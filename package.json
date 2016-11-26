@@ -1,0 +1,33 @@
+{
+  "name": "npm-list-scripts",
+  "version": "0.0.1",
+  "description": "A simple cli that list current package scripts, because something I forget their names",
+  "main": "main.js",
+  "scripts": {
+    "test": "standard",
+    "prestart": "standard",
+    "start": "./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrunoa/npm-list-scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "list",
+    "scripts"
+  ],
+  "author": "vruno <vruno.alassia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vrunoa/npm-list-scripts/issues"
+  },
+  "homepage": "https://github.com/vrunoa/npm-list-scripts#readme",
+  "dependencies": {
+    "find-root": "^1.0.0",
+    "semafor": "0.0.1"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
+}
