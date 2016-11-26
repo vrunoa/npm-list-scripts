@@ -4,17 +4,23 @@ const root = finder(process.cwd())
 const path = require('path')
 const logger = require('semafor')()
 
-function list (root) {
+function getScripts (root) {
   try {
     const dotJSON = require(path.join(root, 'package.json'))
-    logger.log('Available scripts')
-    for (let i in dotJSON['scripts']) {
-      logger.log(`\t|_ ${i} : ${dotJSON['scripts'][i]}`)
-    }
-    logger.log('\n')
+    return dotJSON['scripts']
   } catch (e) {
     logger.fail(e)
+    process.exit(1)
   }
+}
+
+function list (root) {
+  let scripts = getScripts(root)
+  logger.log('Available scripts')
+  for (let i in scripts) {
+    logger.log(`\t|_ ${i} : ${scripts[i]}`)
+  }
+  logger.log('\n')
 }
 
 list(root)
