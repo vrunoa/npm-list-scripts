@@ -10,7 +10,7 @@
   },
   "preferGlobal": true,
   "bin": {
-    "babel-me": "./main.js"
+    "npm-list-scripts": "./main.js"
   },
   "repository": {
     "type": "git",
