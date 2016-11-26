@@ -8,6 +8,10 @@
     "prestart": "standard",
     "start": "./main.js"
   },
+  "preferGlobal": true,
+  "bin": {
+    "babel-me": "./main.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vrunoa/npm-list-scripts.git"
