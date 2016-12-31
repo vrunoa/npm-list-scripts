@@ -17,7 +17,7 @@ function list (cwd) {
   let scripts = getScripts(cwd)
   logger.log('Available scripts')
   for (let i in scripts) {
-    logger.log(`\t|_ ${i} : ${scripts[i]}`)
+    logger.log(` └─ ${i} : ${scripts[i]}`)
   }
   logger.log('\n')
 }
